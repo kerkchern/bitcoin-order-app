@@ -18,13 +18,13 @@ before_script:
   - npm install -g @angular/cli
   - npm install -g now
 script:
-  - ng build --prod --base-href https://kenken64.github.io/bitcoin-order-app/
+  - ng build --prod --base-href https://kerkchern.github.io/bitcoin-order-app/
 
   
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  github_token: $c2ce13046959fe1c3741f4a3e94ad112215e1890
   local_dir: dist/bitcoin
   on:
     branch: development
